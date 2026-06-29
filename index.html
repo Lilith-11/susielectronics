@@ -1914,6 +1914,360 @@ footer {
   .floating-actions { bottom: 20px; right: 16px; }
 }
 
+/* ============================================
+   IMAGE INTEGRATION STYLES
+   ============================================ */
+
+/* ── LOGO ── */
+.nav-logo-img {
+  height: 55px;
+  width: auto;
+  max-width: 200px;
+  object-fit: contain;
+  display: block;
+  image-rendering: -webkit-optimize-contrast;
+  image-rendering: crisp-edges;
+  transition: filter var(--transition-fast), transform var(--transition-fast);
+  filter: brightness(1) drop-shadow(0 0 0 transparent);
+}
+.nav-logo:hover .nav-logo-img {
+  filter: brightness(1.1) drop-shadow(0 0 12px rgba(0,212,255,0.5));
+  transform: scale(1.02);
+}
+nav.scrolled .nav-logo-img { height: 48px; }
+
+/* ── HERO BANNER ── */
+.hero-banner-card {
+  position: absolute;
+  top: 50%; left: 50%;
+  transform: translate(-50%, -50%);
+  width: 340px; height: 420px;
+  border-radius: var(--radius-xl);
+  overflow: hidden;
+  padding: 0;
+  gap: 0;
+  background: transparent;
+}
+.hero-banner-img {
+  width: 100%; height: 100%;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+  transition: transform 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+.hero-banner-card:hover .hero-banner-img { transform: scale(1.04); }
+.hero-banner-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to top, rgba(7,7,14,0.75) 0%, rgba(7,7,14,0.1) 50%, transparent 100%);
+  display: flex; align-items: flex-end; padding: 20px;
+  border-radius: inherit;
+}
+.hero-banner-badge {
+  display: inline-flex; align-items: center; gap: 7px;
+  padding: 7px 14px;
+  background: rgba(0,212,255,0.12);
+  border: 1px solid rgba(0,212,255,0.25);
+  border-radius: 100px;
+  font-size: 11px; font-weight: 600; color: var(--accent-cyan);
+  letter-spacing: 0.08em; backdrop-filter: blur(8px);
+}
+.hero-banner-dot {
+  width: 6px; height: 6px; border-radius: 50%;
+  background: var(--accent-cyan);
+  animation: pulse-cyan 2s infinite;
+  flex-shrink: 0;
+}
+.hero-banner-fallback .hero-banner-img { display: none; }
+
+/* ── LOADER LOGO IMG ── */
+.loader-logo-img {
+  height: 60px; width: auto; max-width: 200px;
+  object-fit: contain;
+  filter: brightness(1.2) drop-shadow(0 0 20px rgba(0,212,255,0.4));
+  animation: fadeInUp 0.6s ease both;
+}
+
+/* ── ABOUT STORE IMAGE ── */
+.about-img-card {
+  padding: 0 !important;
+  overflow: hidden !important;
+}
+.about-store-img {
+  width: 100%; height: 100%;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+  transition: transform 0.7s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+.about-img-card:hover .about-store-img { transform: scale(1.04); }
+.about-img-caption {
+  position: absolute;
+  bottom: 0; left: 0; right: 0;
+  padding: 20px 24px;
+  background: linear-gradient(to top, rgba(7,7,14,0.85) 0%, transparent 100%);
+  font-size: 13px; font-weight: 600; color: var(--accent-cyan);
+  display: flex; align-items: center; gap: 8px;
+  letter-spacing: 0.04em; z-index: 2;
+}
+.about-img-caption-dot {
+  width: 6px; height: 6px; border-radius: 50%;
+  background: var(--accent-cyan);
+  animation: pulse-cyan 2s infinite; flex-shrink: 0;
+}
+.about-img-glow {
+  position: absolute; inset: 0; pointer-events: none; z-index: 1;
+  border-radius: inherit;
+  box-shadow: inset 0 0 40px rgba(0,212,255,0.08), 0 0 0 1px rgba(0,212,255,0.15);
+  transition: box-shadow 0.4s;
+}
+.about-img-card:hover .about-img-glow {
+  box-shadow: inset 0 0 60px rgba(0,212,255,0.12), 0 0 0 1px rgba(0,212,255,0.3), 0 20px 60px rgba(0,212,255,0.1);
+}
+
+/* ── INTERIOR SECTION ── */
+.interior-section { padding-top: 80px; padding-bottom: 80px; }
+.interior-card {
+  margin-top: 48px;
+  border-radius: 30px;
+  overflow: hidden;
+  border: 1px solid var(--border);
+  position: relative;
+  box-shadow: 0 40px 100px rgba(0,0,0,0.5), 0 0 0 1px rgba(0,212,255,0.05);
+}
+.interior-img-wrap { position: relative; overflow: hidden; }
+.interior-img {
+  width: 100%; height: 500px;
+  object-fit: cover; object-position: center;
+  display: block;
+  transition: transform 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+.interior-card:hover .interior-img { transform: scale(1.03); }
+.interior-overlay {
+  position: absolute; inset: 0;
+  background: linear-gradient(to top, rgba(7,7,14,0.82) 0%, rgba(7,7,14,0.1) 55%, transparent 100%);
+  display: flex; align-items: flex-end; padding: 40px;
+}
+.interior-overlay-content { max-width: 600px; }
+.interior-overlay-badge {
+  display: inline-flex; align-items: center; gap: 7px;
+  padding: 6px 14px;
+  background: rgba(0,212,255,0.1);
+  border: 1px solid rgba(0,212,255,0.2);
+  border-radius: 100px;
+  font-family: var(--font-mono);
+  font-size: 11px; color: var(--accent-cyan); letter-spacing: 0.1em;
+  margin-bottom: 16px;
+}
+.interior-badge-dot {
+  width: 6px; height: 6px; border-radius: 50%;
+  background: var(--accent-cyan); animation: pulse-cyan 2s infinite;
+}
+.interior-overlay-text {
+  font-family: var(--font-display);
+  font-size: clamp(18px, 2.5vw, 28px);
+  font-weight: 700; color: var(--text-ice);
+  line-height: 1.3; letter-spacing: -0.3px;
+  font-style: italic;
+}
+
+/* ── PRODUCTS SECTION ── */
+.products-section { padding-top: 80px; padding-bottom: 80px; }
+.products-subtitle { text-align: center; margin: 0 auto 40px; color: var(--accent-cyan); font-weight: 500; }
+.products-gallery { position: relative; }
+.product-img-frame {
+  position: relative; border-radius: 28px; overflow: hidden;
+  border: 1px solid var(--border);
+  box-shadow: 0 40px 100px rgba(0,0,0,0.5), 0 0 0 1px rgba(0,212,255,0.05);
+}
+.product-main-img {
+  width: 100%; height: 460px;
+  object-fit: cover; object-position: center; display: block;
+  transition: transform 0.7s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+.product-img-frame:hover .product-main-img { transform: scale(1.04); }
+.product-reflection {
+  position: absolute; bottom: 0; left: 0; right: 0; height: 50%;
+  background: linear-gradient(to top, rgba(7,7,14,0.6) 0%, transparent 100%);
+  pointer-events: none;
+}
+.product-glass-shine {
+  position: absolute; top: 0; left: -60%;
+  width: 40%; height: 100%;
+  background: linear-gradient(105deg, transparent 40%, rgba(255,255,255,0.06) 50%, transparent 60%);
+  animation: shine-slide 5s ease-in-out infinite 2s;
+  pointer-events: none;
+}
+@keyframes shine-slide {
+  0%, 100% { left: -60%; }
+  50% { left: 120%; }
+}
+.product-cta-row {
+  display: flex; gap: 16px; justify-content: center; margin-top: 32px; flex-wrap: wrap;
+}
+
+/* ── OWNER SECTION ── */
+#owner { position: relative; overflow: hidden; }
+#owner::before {
+  content: '';
+  position: absolute; inset: 0;
+  background: linear-gradient(135deg, rgba(0,212,255,0.02), rgba(123,47,190,0.03));
+  pointer-events: none;
+}
+.owner-card {
+  display: grid; grid-template-columns: 360px 1fr;
+  gap: 64px; align-items: center;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-xl);
+  padding: 56px;
+  margin-top: 56px;
+  position: relative; overflow: hidden;
+}
+.owner-card::before {
+  content: '';
+  position: absolute; top: 0; left: 20%; right: 20%; height: 1px;
+  background: linear-gradient(90deg, transparent, rgba(0,212,255,0.4), transparent);
+}
+.owner-left { display: flex; justify-content: center; }
+.owner-img-frame {
+  position: relative; width: 300px; height: 340px;
+  border-radius: 28px; overflow: hidden;
+  border: 1px solid rgba(0,212,255,0.15);
+  box-shadow: 0 40px 80px rgba(0,0,0,0.5), 0 0 40px rgba(0,212,255,0.08);
+  flex-shrink: 0;
+}
+.owner-photo {
+  width: 100%; height: 100%;
+  object-fit: cover; object-position: center top;
+  display: block;
+  transition: transform 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+.owner-img-frame:hover .owner-photo { transform: scale(1.05); }
+.owner-photo-fallback {
+  width: 100%; height: 100%;
+  background: linear-gradient(135deg, rgba(0,212,255,0.08), rgba(123,47,190,0.08));
+  align-items: center; justify-content: center;
+  font-size: 80px;
+}
+.owner-img-glow {
+  position: absolute; inset: 0; pointer-events: none;
+  box-shadow: inset 0 0 40px rgba(0,212,255,0.06), 0 0 0 1px rgba(0,212,255,0.15);
+  border-radius: inherit;
+  transition: box-shadow 0.4s;
+}
+.owner-img-frame:hover .owner-img-glow {
+  box-shadow: inset 0 0 60px rgba(0,212,255,0.1), 0 0 0 1px rgba(0,212,255,0.3);
+}
+.owner-img-badge {
+  position: absolute; bottom: 16px; left: 50%; transform: translateX(-50%);
+  display: inline-flex; align-items: center; gap: 6px;
+  padding: 7px 16px;
+  background: rgba(7,7,14,0.85); border: 1px solid rgba(0,212,255,0.2);
+  border-radius: 100px; backdrop-filter: blur(12px);
+  font-size: 11px; font-weight: 600; color: var(--accent-cyan);
+  letter-spacing: 0.08em; white-space: nowrap; z-index: 2;
+}
+.owner-badge-dot {
+  width: 6px; height: 6px; border-radius: 50%;
+  background: var(--accent-cyan); animation: pulse-cyan 2s infinite; flex-shrink: 0;
+}
+.owner-right { display: flex; flex-direction: column; gap: 20px; }
+.owner-title-tag {
+  display: inline-flex; align-items: center; gap: 8px;
+  padding: 7px 16px;
+  background: rgba(245,200,66,0.08); border: 1px solid rgba(245,200,66,0.2);
+  border-radius: 100px; width: fit-content;
+  font-size: 12px; font-weight: 600; color: #f5c842; letter-spacing: 0.05em;
+}
+.owner-name {
+  font-family: var(--font-display);
+  font-size: clamp(32px, 4vw, 52px);
+  font-weight: 800; letter-spacing: -1.5px; color: var(--text-ice); line-height: 1;
+}
+.owner-subtitle {
+  font-size: 14px; color: var(--accent-cyan);
+  font-family: var(--font-mono); letter-spacing: 0.08em;
+}
+.owner-bio {
+  font-size: 15px; color: var(--text-muted); line-height: 1.75; max-width: 520px;
+}
+.owner-checks {
+  display: flex; flex-wrap: wrap; gap: 10px;
+}
+.owner-check {
+  display: flex; align-items: center; gap: 8px;
+  padding: 8px 16px;
+  background: rgba(0,212,255,0.05);
+  border: 1px solid rgba(0,212,255,0.12);
+  border-radius: 100px;
+  font-size: 13px; font-weight: 600; color: var(--text-muted);
+  transition: all var(--transition-fast);
+}
+.owner-check:hover { border-color: rgba(0,212,255,0.3); color: var(--text-ice); }
+.owner-check-icon { color: var(--accent-cyan); font-weight: 800; font-size: 14px; }
+.owner-actions { display: flex; gap: 14px; flex-wrap: wrap; margin-top: 4px; }
+
+/* ── TESTIMONIALS BG ── */
+.testimonials-section-wrap { position: relative; overflow: hidden; }
+.testimonials-bg-img {
+  position: absolute; inset: 0; z-index: 0; pointer-events: none;
+}
+.testimonials-bg-photo {
+  width: 100%; height: 100%;
+  object-fit: cover; object-position: center;
+  display: block; opacity: 0.1;
+  filter: blur(2px) grayscale(40%);
+}
+.testimonials-bg-overlay {
+  position: absolute; inset: 0;
+  background: linear-gradient(135deg, rgba(7,7,14,0.92) 0%, rgba(13,13,26,0.88) 100%);
+}
+.testimonials-section-inner { position: relative; z-index: 1; }
+
+/* ── CONTACT STORE IMAGE ── */
+.contact-store-img-wrap {
+  position: relative; border-radius: 20px; overflow: hidden;
+  margin-bottom: 40px;
+  border: 1px solid var(--border);
+  box-shadow: 0 20px 60px rgba(0,0,0,0.4);
+}
+.contact-store-img {
+  width: 100%; height: 220px;
+  object-fit: cover; object-position: center;
+  display: block;
+  transition: transform 0.6s ease;
+}
+.contact-store-img-wrap:hover .contact-store-img { transform: scale(1.02); }
+.contact-store-overlay {
+  position: absolute; inset: 0;
+  background: linear-gradient(to right, rgba(7,7,14,0.7) 0%, rgba(7,7,14,0.2) 60%, transparent 100%);
+  display: flex; align-items: center; padding: 32px;
+}
+.contact-store-badge {
+  display: inline-flex; align-items: center; gap: 8px;
+  padding: 10px 20px;
+  background: rgba(7,7,14,0.75); border: 1px solid rgba(0,212,255,0.2);
+  border-radius: 100px; backdrop-filter: blur(16px);
+  font-size: 13px; font-weight: 600; color: var(--text-ice); letter-spacing: 0.04em;
+}
+.contact-store-dot {
+  width: 7px; height: 7px; border-radius: 50%;
+  background: var(--accent-cyan); animation: pulse-cyan 2s infinite; flex-shrink: 0;
+}
+
+/* ── FOOTER LOGO IMAGE ── */
+.footer-logo-link { display: block; margin-bottom: 16px; text-decoration: none; }
+.footer-logo-img {
+  height: 48px; width: auto; max-width: 180px;
+  object-fit: contain; display: block;
+  filter: brightness(1) drop-shadow(0 0 0 transparent);
+  transition: filter var(--transition-fast);
+}
+.footer-logo-link:hover .footer-logo-img {
+  filter: brightness(1.1) drop-shadow(0 0 10px rgba(0,212,255,0.35));
+}
+
 /* Reduced motion */
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after { animation-duration: 0.01ms !important; transition-duration: 0.2s !important; }
@@ -1930,7 +2284,13 @@ footer {
 
 <!-- Loading Screen -->
 <div id="loader">
-  <div class="loader-logo">SusiElectronics</div>
+  <img src="logoimg.png"
+       alt="SusiElectronics"
+       width="180" height="60"
+       decoding="async"
+       class="loader-logo-img"
+       onerror="this.style.display='none';this.nextElementSibling.style.display='block'">
+  <div class="loader-logo" style="display:none">SusiElectronics</div>
   <div class="loader-bar-track">
     <div class="loader-bar" id="loaderBar"></div>
   </div>
@@ -1942,7 +2302,15 @@ footer {
 
 <!-- Navigation -->
 <nav id="navbar">
-  <a href="/" class="nav-logo">Susi<span>Electronics</span></a>
+  <a href="/" class="nav-logo" aria-label="SusiElectronics Home">
+    <img src="logoimg.png"
+         alt="SusiElectronics Logo"
+         width="160" height="55"
+         decoding="async"
+         class="nav-logo-img"
+         onerror="this.style.display='none';this.nextElementSibling.style.display='block'">
+    <span class="nav-logo-fallback" style="display:none">Susi<span>Electronics</span></span>
+  </a>
   <ul class="nav-links">
     <li><a href="#about">About</a></li>
     <li><a href="#services">Services</a></li>
@@ -2042,51 +2410,25 @@ footer {
       </div>
     </div>
 
-    <!-- Right — Visual -->
+    <!-- Right — Hero Banner Image -->
     <div class="hero-right" id="heroVisual">
       <div class="orbit-ring orbit-1"><div class="orbit-dot"></div></div>
       <div class="orbit-ring orbit-2"></div>
 
-      <!-- Main Card -->
-      <div class="hero-card-main" id="heroCard">
-        <div class="appliance-svg-wrap">
-          <svg class="ac-unit-svg" width="220" height="160" viewBox="0 0 220 160" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <!-- AC Unit Body -->
-            <rect x="10" y="30" width="200" height="100" rx="16" fill="url(#ac-body-grad)" stroke="rgba(0,212,255,0.3)" stroke-width="1"/>
-            <!-- Grill lines -->
-            <rect x="24" y="70" width="142" height="2" rx="1" fill="rgba(0,212,255,0.15)"/>
-            <rect x="24" y="80" width="142" height="2" rx="1" fill="rgba(0,212,255,0.15)"/>
-            <rect x="24" y="90" width="142" height="2" rx="1" fill="rgba(0,212,255,0.15)"/>
-            <rect x="24" y="100" width="142" height="2" rx="1" fill="rgba(0,212,255,0.15)"/>
-            <rect x="24" y="110" width="142" height="2" rx="1" fill="rgba(0,212,255,0.15)"/>
-            <!-- Control panel -->
-            <rect x="172" y="44" width="28" height="72" rx="8" fill="rgba(0,212,255,0.08)" stroke="rgba(0,212,255,0.15)" stroke-width="1"/>
-            <!-- Buttons -->
-            <circle cx="186" cy="58" r="5" fill="rgba(0,212,255,0.4)"/>
-            <circle cx="186" cy="74" r="5" fill="rgba(123,47,190,0.4)"/>
-            <circle cx="186" cy="90" r="5" fill="rgba(255,107,53,0.4)"/>
-            <!-- Power light -->
-            <circle cx="186" cy="104" r="4" fill="#00D4FF" filter="url(#glow)"/>
-            <!-- Brand text area -->
-            <rect x="24" y="40" width="80" height="22" rx="6" fill="rgba(255,255,255,0.04)"/>
-            <text x="36" y="55" font-family="Syne,sans-serif" font-size="10" font-weight="800" fill="rgba(255,255,255,0.5)" letter-spacing="1">SUSI-COOL</text>
-            <!-- Air flow indicator -->
-            <path d="M24 132 Q60 125 110 132 Q160 139 196 132" stroke="rgba(0,212,255,0.3)" stroke-width="1.5" fill="none" stroke-dasharray="4 4"/>
-            <!-- Defs -->
-            <defs>
-              <linearGradient id="ac-body-grad" x1="10" y1="30" x2="210" y2="130" gradientUnits="userSpaceOnUse">
-                <stop offset="0%" stop-color="rgba(255,255,255,0.1)"/>
-                <stop offset="100%" stop-color="rgba(255,255,255,0.03)"/>
-              </linearGradient>
-              <filter id="glow">
-                <feGaussianBlur stdDeviation="2" result="blur"/>
-                <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
-              </filter>
-            </defs>
-          </svg>
+      <!-- Hero Banner Image Card -->
+      <div class="hero-card-main hero-banner-card" id="heroCard">
+        <img src="bannering.png"
+             alt="SusiElectronics – Professional Appliance Sales and Service in Salem"
+             width="340" height="420"
+             decoding="async"
+             class="hero-banner-img"
+             onerror="this.parentElement.classList.add('hero-banner-fallback')">
+        <div class="hero-banner-overlay">
+          <div class="hero-banner-badge">
+            <span class="hero-banner-dot"></span>
+            Salem's Trusted Service Since 2010
+          </div>
         </div>
-        <div class="hero-card-label">Expert AC Service</div>
-        <div class="hero-card-sub">Installation · Gas Refill · Maintenance · Repair</div>
       </div>
 
       <!-- Float card 1 — Available 24/7 -->
@@ -2153,19 +2495,19 @@ footer {
   <div class="section">
     <div class="about-wrap">
       <div class="about-visual reveal">
-        <div class="about-glass-card">
-          <div class="about-icon-grid">
-            <div class="about-icon-cell"><span class="icon">❄️</span><span class="label">AC</span></div>
-            <div class="about-icon-cell"><span class="icon">🧊</span><span class="label">Fridge</span></div>
-            <div class="about-icon-cell"><span class="icon">🫧</span><span class="label">Washer</span></div>
-            <div class="about-icon-cell"><span class="icon">📺</span><span class="label">LED TV</span></div>
-            <div class="about-icon-cell"><span class="icon">💧</span><span class="label">RO Unit</span></div>
-            <div class="about-icon-cell"><span class="icon">🌬️</span><span class="label">Cooler</span></div>
-            <div class="about-icon-cell"><span class="icon">🍳</span><span class="label">Microwave</span></div>
-            <div class="about-icon-cell"><span class="icon">🛡️</span><span class="label">Warranty</span></div>
-            <div class="about-icon-cell"><span class="icon">⚡</span><span class="label">Express</span></div>
+        <div class="about-glass-card about-img-card">
+          <img src="sfi.png"
+               alt="SusiElectronics Store Front – Trusted Electronics Sales &amp; Service in Salem"
+               width="480" height="480"
+               loading="lazy"
+               decoding="async"
+               class="about-store-img"
+               onerror="this.parentElement.classList.add('about-img-error')">
+          <div class="about-img-caption">
+            <span class="about-img-caption-dot"></span>
+            Trusted Electronics Sales &amp; Service Since 2010
           </div>
-          <div class="about-badge">🏆 Best Service · Salem 2024</div>
+          <div class="about-img-glow"></div>
         </div>
       </div>
       <div class="about-content reveal reveal-delay-2">
@@ -2231,6 +2573,66 @@ footer {
     </div>
   </div>
 </div>
+
+<!-- ============================================
+     INTERIOR SHOWCASE
+     ============================================ -->
+<section id="interior-showcase" aria-label="Inside Our Store">
+  <div class="section interior-section">
+    <div class="section-eyebrow reveal">Our Workshop</div>
+    <h2 class="section-title reveal reveal-delay-1">Inside Our <span class="accent">Store</span></h2>
+    <div class="interior-card reveal reveal-delay-2">
+      <div class="interior-img-wrap">
+        <img src="II.png"
+             alt="Interior of SusiElectronics – Modern workshop with advanced tools and experienced technicians in Salem"
+             width="1200" height="500"
+             loading="lazy"
+             decoding="async"
+             class="interior-img">
+        <div class="interior-overlay">
+          <div class="interior-overlay-content">
+            <div class="interior-overlay-badge">
+              <span class="interior-badge-dot"></span> Live Workshop
+            </div>
+            <p class="interior-overlay-text">"Modern workshop equipped with advanced tools and experienced technicians."</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================
+     PRODUCTS SHOWCASE
+     ============================================ -->
+<section id="products" aria-label="Products We Sell">
+  <div class="section products-section">
+    <div class="section-eyebrow reveal">What We Sell</div>
+    <h2 class="section-title reveal reveal-delay-1">Products We <span class="accent">Sell</span></h2>
+    <p class="section-body products-subtitle reveal reveal-delay-2">AC • Refrigerator • Washing Machine • TV • RO • Microwave • Air Cooler</p>
+    <div class="products-gallery reveal reveal-delay-2">
+      <div class="product-img-frame">
+        <img src="PI.png"
+             alt="Electronic Appliances – Air Conditioners, Refrigerators, Washing Machines, LED TVs, RO Purifiers available at SusiElectronics Salem"
+             width="1200" height="500"
+             loading="lazy"
+             decoding="async"
+             class="product-main-img">
+        <div class="product-reflection"></div>
+        <div class="product-glass-shine"></div>
+      </div>
+      <div class="product-cta-row reveal reveal-delay-3">
+        <a href="#contact" class="btn-primary">
+          <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M2 8h12M8 2l6 6-6 6" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          View Products &amp; Enquire
+        </a>
+        <a href="https://wa.me/919597478152?text=Hi%20SusiElectronics%2C%20I%20want%20to%20enquire%20about%20products" class="btn-secondary" target="_blank" rel="noopener">
+          💬 WhatsApp for Pricing
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
 
 <!-- ============================================
      SERVICES
@@ -2464,10 +2866,82 @@ footer {
 </section>
 
 <!-- ============================================
+     OWNER SECTION
+     ============================================ -->
+<section id="owner" aria-label="Meet the Founder">
+  <div class="section">
+    <div class="section-eyebrow reveal">Meet the Expert</div>
+    <h2 class="section-title reveal reveal-delay-1">The Person Behind <span class="accent">SusiElectronics</span></h2>
+    <div class="owner-card reveal reveal-delay-2">
+      <div class="owner-left">
+        <div class="owner-img-frame">
+          <img src="owner.png"
+               alt="G Giritharan – Founder and Chief Service Engineer, SusiElectronics Salem"
+               width="320" height="360"
+               loading="lazy"
+               decoding="async"
+               class="owner-photo"
+               onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+          <div class="owner-photo-fallback" style="display:none" aria-label="G Giritharan">👨‍🔧</div>
+          <div class="owner-img-glow"></div>
+          <div class="owner-img-badge">
+            <span class="owner-badge-dot"></span>
+            Chief Engineer
+          </div>
+        </div>
+      </div>
+      <div class="owner-right">
+        <div class="owner-title-tag">⭐ Founder &amp; Chief Service Engineer</div>
+        <h3 class="owner-name">G. Giritharan</h3>
+        <p class="owner-subtitle">15+ Years Experience · Salem, Tamil Nadu</p>
+        <p class="owner-bio">
+          Built on trust, quality workmanship, and customer satisfaction, G. Giritharan has successfully served thousands of happy customers across Tamil Nadu with reliable appliance sales and repair services. Since founding SusiElectronics in 2010, he has grown a one-person operation into Salem's most recognized home appliance service brand — built entirely on word-of-mouth and repeat business.
+        </p>
+        <div class="owner-checks">
+          <div class="owner-check">
+            <div class="owner-check-icon">✓</div>
+            <span>Certified Technician</span>
+          </div>
+          <div class="owner-check">
+            <div class="owner-check-icon">✓</div>
+            <span>Genuine Spare Parts</span>
+          </div>
+          <div class="owner-check">
+            <div class="owner-check-icon">✓</div>
+            <span>Honest Pricing</span>
+          </div>
+          <div class="owner-check">
+            <div class="owner-check-icon">✓</div>
+            <span>Fast Service</span>
+          </div>
+          <div class="owner-check">
+            <div class="owner-check-icon">✓</div>
+            <span>Customer First</span>
+          </div>
+        </div>
+        <div class="owner-actions">
+          <a href="tel:+918270433360" class="btn-primary">📞 Call Directly</a>
+          <a href="https://wa.me/918270433360" class="btn-secondary" target="_blank" rel="noopener">💬 WhatsApp</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================
      TESTIMONIALS
      ============================================ -->
-<section id="testimonials">
-  <div class="section">
+<section id="testimonials" class="testimonials-section-wrap">
+  <div class="testimonials-bg-img" aria-hidden="true">
+    <img src="PI.png"
+         alt=""
+         width="1200" height="600"
+         loading="lazy"
+         decoding="async"
+         class="testimonials-bg-photo">
+    <div class="testimonials-bg-overlay"></div>
+  </div>
+  <div class="section testimonials-section-inner">
     <div style="text-align:center;margin-bottom:0">
       <div class="section-eyebrow reveal" style="justify-content:center">Customer Stories</div>
       <h2 class="section-title reveal reveal-delay-1" style="text-align:center">Trusted by <span class="accent">Thousands</span> in Salem</h2>
@@ -2623,6 +3097,21 @@ footer {
       <div class="section-eyebrow reveal" style="justify-content:center">Get In Touch</div>
       <h2 class="section-title reveal reveal-delay-1" style="text-align:center">Book Your <span class="accent">Service</span> Today</h2>
     </div>
+    <!-- Store front image above contact -->
+    <div class="contact-store-img-wrap reveal reveal-delay-2">
+      <img src="sfi.png"
+           alt="SusiElectronics Store Front – Visit Us at Salem or Book Online"
+           width="1200" height="280"
+           loading="lazy"
+           decoding="async"
+           class="contact-store-img">
+      <div class="contact-store-overlay">
+        <span class="contact-store-badge">
+          <span class="contact-store-dot"></span>
+          We Come to You · Doorstep Service Across Salem
+        </span>
+      </div>
+    </div>
     <div class="contact-wrap">
       <div class="contact-form-wrap reveal">
         <h3 style="font-family:var(--font-display);font-size:20px;font-weight:700;color:var(--text-ice);margin-bottom:28px;letter-spacing:-0.3px;">Book a Service Call</h3>
@@ -2720,7 +3209,16 @@ footer {
   <div class="footer-inner">
     <div class="footer-top">
       <div class="footer-brand">
-        <a href="/" class="nav-logo">Susi<span>Electronics</span></a>
+        <a href="/" class="footer-logo-link" aria-label="SusiElectronics Home">
+          <img src="logoimg.png"
+               alt="SusiElectronics Logo"
+               width="160" height="48"
+               loading="lazy"
+               decoding="async"
+               class="footer-logo-img"
+               onerror="this.style.display='none';this.nextElementSibling.style.display='block'">
+          <span class="nav-logo" style="display:none">Susi<span>Electronics</span></span>
+        </a>
         <p class="footer-desc">Trusted Sales & Service of Home Appliances in Salem, Tamil Nadu. Serving households since 2010 with genuine care and expert technicians.</p>
         <div class="footer-social">
           <a href="#" class="social-btn" aria-label="Facebook">f</a>
