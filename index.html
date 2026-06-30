@@ -15,7 +15,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=Inter:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
-
+ 
 <!-- JSON-LD Schema -->
 <script type="application/ld+json">
 {
@@ -46,7 +46,7 @@
   }
 }
 </script>
-
+ 
 <style>
 /* ============================================
    SUSIELECTRONICS — DESIGN SYSTEM
@@ -77,11 +77,11 @@
   --transition: 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
   --transition-fast: 0.2s cubic-bezier(0.25, 0.46, 0.45, 0.94);
 }
-
+ 
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-
+ 
 html { scroll-behavior: smooth; overflow-x: hidden; }
-
+ 
 body {
   font-family: var(--font-body);
   background: var(--bg-void);
@@ -89,7 +89,7 @@ body {
   overflow-x: hidden;
   cursor: none;
 }
-
+ 
 /* Custom Cursor */
 .cursor {
   position: fixed;
@@ -114,7 +114,7 @@ body {
 }
 .cursor.hover { width: 6px; height: 6px; }
 .cursor-ring.hover { width: 60px; height: 60px; border-color: var(--accent-cyan); }
-
+ 
 /* Loading Screen */
 #loader {
   position: fixed; inset: 0;
@@ -157,7 +157,7 @@ body {
   color: var(--text-dim);
   letter-spacing: 0.1em;
 }
-
+ 
 /* Progress Bar */
 #progress-bar {
   position: fixed;
@@ -168,7 +168,7 @@ body {
   width: 0%;
   transition: width 0.1s;
 }
-
+ 
 /* ============================================
    NAVIGATION
    ============================================ */
@@ -301,7 +301,7 @@ nav.scrolled {
   transition: all var(--transition-fast);
   display: block;
 }
-
+ 
 /* Mobile Nav */
 .mobile-nav {
   position: fixed;
@@ -352,7 +352,7 @@ nav.scrolled {
   transition: all 0.3s;
 }
 .overlay.open { opacity: 1; visibility: visible; }
-
+ 
 /* ============================================
    HERO
    ============================================ */
@@ -363,7 +363,7 @@ nav.scrolled {
   align-items: center;
   overflow: hidden;
 }
-
+ 
 /* Aurora Background */
 .aurora-bg {
   position: absolute;
@@ -398,7 +398,7 @@ nav.scrolled {
   0% { transform: translate(0, 0) scale(1); }
   100% { transform: translate(40px, 30px) scale(1.05); }
 }
-
+ 
 /* Grid overlay */
 .grid-overlay {
   position: absolute;
@@ -409,7 +409,7 @@ nav.scrolled {
   background-size: 60px 60px;
   z-index: 1;
 }
-
+ 
 /* Noise overlay */
 .noise-overlay {
   position: absolute;
@@ -419,7 +419,7 @@ nav.scrolled {
   background-size: 200px 200px;
   z-index: 1;
 }
-
+ 
 .hero-container {
   position: relative;
   z-index: 2;
@@ -432,9 +432,9 @@ nav.scrolled {
   gap: 60px;
   align-items: center;
 }
-
+ 
 .hero-left { display: flex; flex-direction: column; gap: 28px; }
-
+ 
 .hero-badge {
   display: inline-flex;
   align-items: center;
@@ -464,7 +464,7 @@ nav.scrolled {
   letter-spacing: 0.12em;
   text-transform: uppercase;
 }
-
+ 
 .hero-headline {
   font-family: var(--font-display);
   font-size: clamp(42px, 6vw, 80px);
@@ -482,7 +482,7 @@ nav.scrolled {
   background-clip: text;
 }
 .hero-headline .line-3 { color: var(--text-ice); display: block; }
-
+ 
 .hero-sub {
   font-size: 16px;
   line-height: 1.7;
@@ -490,7 +490,7 @@ nav.scrolled {
   max-width: 440px;
   animation: fadeInUp 0.8s 0.2s ease both;
 }
-
+ 
 .hero-services {
   display: flex;
   flex-wrap: wrap;
@@ -512,7 +512,7 @@ nav.scrolled {
   border-color: rgba(0,212,255,0.3);
   color: var(--accent-cyan);
 }
-
+ 
 .hero-cta {
   display: flex;
   align-items: center;
@@ -584,7 +584,7 @@ nav.scrolled {
   background: rgba(255,107,53,0.2);
   border-color: var(--accent-ember);
 }
-
+ 
 .hero-stats {
   display: flex;
   gap: 32px;
@@ -607,14 +607,14 @@ nav.scrolled {
   font-weight: 500;
   letter-spacing: 0.05em;
 }
-
+ 
 /* Hero Right — 3D Appliance Showcase */
 .hero-right {
   position: relative;
   height: 560px;
   animation: fadeInUp 0.8s 0.2s ease both;
 }
-
+ 
 /* Main glass card */
 .hero-card-main {
   position: absolute;
@@ -650,7 +650,7 @@ nav.scrolled {
   height: 1px;
   background: linear-gradient(90deg, transparent, rgba(0,212,255,0.5), transparent);
 }
-
+ 
 /* Appliance SVG */
 .appliance-svg-wrap {
   position: relative;
@@ -664,7 +664,7 @@ nav.scrolled {
   0%, 100% { transform: translateY(0px); }
   50% { transform: translateY(-12px); }
 }
-
+ 
 .hero-card-label {
   position: relative;
   z-index: 1;
@@ -682,7 +682,7 @@ nav.scrolled {
   text-align: center;
   padding: 0 24px;
 }
-
+ 
 /* Floating mini-cards */
 .float-card {
   position: absolute;
@@ -707,7 +707,7 @@ nav.scrolled {
 .fc-1 { top: 4%; right: 2%; }
 .fc-2 { bottom: 18%; left: 0%; }
 .fc-3 { top: 38%; left: -2%; }
-
+ 
 .fc-icon {
   width: 38px; height: 38px;
   border-radius: var(--radius-sm);
@@ -727,7 +727,7 @@ nav.scrolled {
   white-space: nowrap;
 }
 .fc-sub { font-size: 10px; color: var(--text-dim); white-space: nowrap; }
-
+ 
 /* Orbit rings */
 .orbit-ring {
   position: absolute;
@@ -753,7 +753,7 @@ nav.scrolled {
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }
 }
-
+ 
 /* Glow dot on orbit */
 .orbit-dot {
   position: absolute;
@@ -764,12 +764,12 @@ nav.scrolled {
   transform: translate(-50%, -50%);
   box-shadow: 0 0 10px var(--accent-cyan);
 }
-
+ 
 @keyframes fadeInUp {
   from { opacity: 0; transform: translateY(30px); }
   to { opacity: 1; transform: translateY(0); }
 }
-
+ 
 /* ============================================
    MARQUEE
    ============================================ */
@@ -806,7 +806,7 @@ nav.scrolled {
   from { transform: translateX(0); }
   to { transform: translateX(-50%); }
 }
-
+ 
 /* ============================================
    ABOUT
    ============================================ */
@@ -815,7 +815,7 @@ nav.scrolled {
   max-width: 1280px;
   margin: 0 auto;
 }
-
+ 
 .section-eyebrow {
   display: inline-flex;
   align-items: center;
@@ -833,7 +833,7 @@ nav.scrolled {
   width: 24px; height: 1px;
   background: var(--accent-cyan);
 }
-
+ 
 .section-title {
   font-family: var(--font-display);
   font-size: clamp(36px, 5vw, 60px);
@@ -849,14 +849,14 @@ nav.scrolled {
   -webkit-text-fill-color: transparent;
   background-clip: text;
 }
-
+ 
 .section-body {
   font-size: 16px;
   line-height: 1.75;
   color: var(--text-muted);
   max-width: 600px;
 }
-
+ 
 #about { position: relative; }
 .about-wrap {
   display: grid;
@@ -935,9 +935,9 @@ nav.scrolled {
   color: var(--text-ice);
   letter-spacing: -0.2px;
 }
-
+ 
 .about-content { display: flex; flex-direction: column; gap: 28px; }
-
+ 
 .about-timeline {
   display: flex;
   flex-direction: column;
@@ -982,7 +982,7 @@ nav.scrolled {
   color: var(--text-muted);
   line-height: 1.6;
 }
-
+ 
 /* ============================================
    STATS
    ============================================ */
@@ -1044,7 +1044,7 @@ nav.scrolled {
   font-weight: 500;
   margin-top: 4px;
 }
-
+ 
 /* ============================================
    SERVICES
    ============================================ */
@@ -1098,7 +1098,7 @@ nav.scrolled {
 }
 .service-card:hover::before { opacity: 1; }
 .service-card:hover::after { opacity: 1; }
-
+ 
 .service-icon-wrap {
   width: 60px; height: 60px;
   border-radius: var(--radius-md);
@@ -1183,7 +1183,7 @@ nav.scrolled {
   background: rgba(0,212,255,0.15);
   border-color: var(--accent-cyan);
 }
-
+ 
 /* Emergency card */
 .service-card.emergency {
   border-color: rgba(255,107,53,0.2);
@@ -1192,7 +1192,7 @@ nav.scrolled {
 .service-card.emergency:hover {
   border-color: rgba(255,107,53,0.4);
 }
-
+ 
 /* ============================================
    WHY CHOOSE US
    ============================================ */
@@ -1235,7 +1235,7 @@ nav.scrolled {
   letter-spacing: -0.2px;
 }
 .why-desc { font-size: 14px; color: var(--text-muted); line-height: 1.65; }
-
+ 
 /* ============================================
    PROCESS
    ============================================ */
@@ -1299,7 +1299,7 @@ nav.scrolled {
   letter-spacing: -0.2px;
 }
 .process-desc { font-size: 12px; color: var(--text-dim); line-height: 1.6; }
-
+ 
 /* ============================================
    TESTIMONIALS
    ============================================ */
@@ -1377,7 +1377,7 @@ nav.scrolled {
   letter-spacing: 0.05em;
   margin-top: 4px;
 }
-
+ 
 /* ============================================
    EMERGENCY BANNER
    ============================================ */
@@ -1445,7 +1445,7 @@ nav.scrolled {
   transform: translateY(-2px);
   box-shadow: 0 16px 48px rgba(255,107,53,0.5);
 }
-
+ 
 /* ============================================
    BRANDS
    ============================================ */
@@ -1487,7 +1487,7 @@ nav.scrolled {
   border-color: rgba(255,255,255,0.15);
   color: var(--text-ice);
 }
-
+ 
 /* ============================================
    FAQ
    ============================================ */
@@ -1550,7 +1550,7 @@ nav.scrolled {
   color: var(--text-muted);
   line-height: 1.7;
 }
-
+ 
 /* ============================================
    CONTACT
    ============================================ */
@@ -1624,7 +1624,7 @@ nav.scrolled {
   transform: translateY(-2px);
   box-shadow: 0 16px 48px rgba(0,212,255,0.35);
 }
-
+ 
 .contact-info { display: flex; flex-direction: column; gap: 24px; }
 .contact-card {
   background: var(--bg-card);
@@ -1680,7 +1680,7 @@ nav.scrolled {
   50% { transform: translateY(-8px); }
 }
 .map-text { font-size: 13px; color: var(--text-muted); }
-
+ 
 /* ============================================
    FOOTER
    ============================================ */
@@ -1766,7 +1766,7 @@ footer {
   transition: color var(--transition-fast);
 }
 .footer-legal a:hover { color: var(--text-muted); }
-
+ 
 /* ============================================
    FLOATING ACTIONS
    ============================================ */
@@ -1842,7 +1842,7 @@ footer {
   pointer-events: all;
 }
 .fab-top:hover { background: rgba(0,212,255,0.1); border-color: rgba(0,212,255,0.3); }
-
+ 
 /* Scroll reveal */
 .reveal {
   opacity: 0;
@@ -1858,66 +1858,11 @@ footer {
 .reveal-delay-3 { transition-delay: 0.3s; }
 .reveal-delay-4 { transition-delay: 0.4s; }
 .reveal-delay-5 { transition-delay: 0.5s; }
-
-/* ============================================
-   RESPONSIVE
-   ============================================ */
-@media (max-width: 1024px) {
-  .hero-container { grid-template-columns: 1fr; gap: 60px; padding-top: 140px; }
-  .hero-right { height: 400px; }
-  .about-wrap { grid-template-columns: 1fr; gap: 48px; }
-  .about-visual { height: 360px; }
-  .services-grid { grid-template-columns: repeat(2, 1fr); }
-  .stats-inner { grid-template-columns: repeat(2, 1fr); }
-  .footer-top { grid-template-columns: 1fr 1fr; gap: 40px; }
-  nav { padding: 0 24px; }
-  .nav-links { display: none; }
-  .hamburger { display: flex; }
-  .hero-container { padding: 120px 24px 60px; }
-  #why-wrap { padding: 48px 32px; }
-  .why-grid { gap: 32px; }
-}
-
-@media (max-width: 768px) {
-  .section { padding: 80px 24px; }
-  .hero-right { display: none; }
-  .hero-container { padding: 100px 24px 60px; }
-  .hero-stats { gap: 24px; flex-wrap: wrap; }
-  .services-grid { grid-template-columns: 1fr; }
-  .stats-inner { grid-template-columns: 1fr 1fr; }
-  .testimonials-grid { grid-template-columns: 1fr; }
-  .process-track { flex-direction: column; gap: 32px; }
-  .process-track::before { display: none; }
-  .contact-wrap { grid-template-columns: 1fr; }
-  .form-row { grid-template-columns: 1fr; }
-  .emergency-banner { flex-direction: column; margin: 0 24px; padding: 36px 28px; }
-  .emergency-btns { flex-direction: column; width: 100%; }
-  .btn-ember { text-align: center; }
-  .services-header { flex-direction: column; align-items: flex-start; }
-  .faq-layout { grid-template-columns: 1fr; }
-  .faq-left { position: static; }
-  .footer-top { grid-template-columns: 1fr; }
-  .footer-bottom { flex-direction: column; text-align: center; }
-  nav { padding: 0 20px; }
-  .nav-cta .btn-book { display: none; }
-  .why-grid { grid-template-columns: 1fr; }
-  .brands-section { padding: 60px 24px; }
-}
-
-@media (max-width: 480px) {
-  .hero-headline { letter-spacing: -1px; }
-  .hero-cta { flex-direction: column; width: 100%; }
-  .btn-primary, .btn-secondary { width: 100%; justify-content: center; }
-  .stat-card { padding: 32px 24px; }
-  .stat-card .num { font-size: 40px; }
-  .about-icon-grid { grid-template-columns: repeat(3, 1fr); gap: 10px; }
-  .floating-actions { bottom: 20px; right: 16px; }
-}
-
+ 
 /* ============================================
    IMAGE INTEGRATION STYLES
    ============================================ */
-
+ 
 /* ── LOGO ── */
 .nav-logo-img {
   height: 55px;
@@ -1935,7 +1880,7 @@ footer {
   transform: scale(1.02);
 }
 nav.scrolled .nav-logo-img { height: 48px; }
-
+ 
 /* ── HERO BANNER ── */
 .hero-banner-card {
   position: absolute;
@@ -1979,7 +1924,7 @@ nav.scrolled .nav-logo-img { height: 48px; }
   flex-shrink: 0;
 }
 .hero-banner-fallback .hero-banner-img { display: none; }
-
+ 
 /* ── LOADER LOGO IMG ── */
 .loader-logo-img {
   height: 60px; width: auto; max-width: 200px;
@@ -1987,7 +1932,7 @@ nav.scrolled .nav-logo-img { height: 48px; }
   filter: brightness(1.2) drop-shadow(0 0 20px rgba(0,212,255,0.4));
   animation: fadeInUp 0.6s ease both;
 }
-
+ 
 /* ── ABOUT STORE IMAGE ── */
 .about-img-card {
   padding: 0 !important;
@@ -2024,7 +1969,7 @@ nav.scrolled .nav-logo-img { height: 48px; }
 .about-img-card:hover .about-img-glow {
   box-shadow: inset 0 0 60px rgba(0,212,255,0.12), 0 0 0 1px rgba(0,212,255,0.3), 0 20px 60px rgba(0,212,255,0.1);
 }
-
+ 
 /* ── INTERIOR SECTION ── */
 .interior-section { padding-top: 80px; padding-bottom: 80px; }
 .interior-card {
@@ -2070,7 +2015,7 @@ nav.scrolled .nav-logo-img { height: 48px; }
   line-height: 1.3; letter-spacing: -0.3px;
   font-style: italic;
 }
-
+ 
 /* ── PRODUCTS SECTION ── */
 .products-section { padding-top: 80px; padding-bottom: 80px; }
 .products-subtitle { text-align: center; margin: 0 auto 40px; color: var(--accent-cyan); font-weight: 500; }
@@ -2105,7 +2050,7 @@ nav.scrolled .nav-logo-img { height: 48px; }
 .product-cta-row {
   display: flex; gap: 16px; justify-content: center; margin-top: 32px; flex-wrap: wrap;
 }
-
+ 
 /* ── OWNER SECTION ── */
 #owner { position: relative; overflow: hidden; }
 #owner::before {
@@ -2207,7 +2152,7 @@ nav.scrolled .nav-logo-img { height: 48px; }
 .owner-check:hover { border-color: rgba(0,212,255,0.3); color: var(--text-ice); }
 .owner-check-icon { color: var(--accent-cyan); font-weight: 800; font-size: 14px; }
 .owner-actions { display: flex; gap: 14px; flex-wrap: wrap; margin-top: 4px; }
-
+ 
 /* ── TESTIMONIALS BG ── */
 .testimonials-section-wrap { position: relative; overflow: hidden; }
 .testimonials-bg-img {
@@ -2224,7 +2169,7 @@ nav.scrolled .nav-logo-img { height: 48px; }
   background: linear-gradient(135deg, rgba(7,7,14,0.92) 0%, rgba(13,13,26,0.88) 100%);
 }
 .testimonials-section-inner { position: relative; z-index: 1; }
-
+ 
 /* ── CONTACT STORE IMAGE ── */
 .contact-store-img-wrap {
   position: relative; border-radius: 20px; overflow: hidden;
@@ -2255,7 +2200,7 @@ nav.scrolled .nav-logo-img { height: 48px; }
   width: 7px; height: 7px; border-radius: 50%;
   background: var(--accent-cyan); animation: pulse-cyan 2s infinite; flex-shrink: 0;
 }
-
+ 
 /* ── FOOTER LOGO IMAGE ── */
 .footer-logo-link { display: block; margin-bottom: 16px; text-decoration: none; }
 .footer-logo-img {
@@ -2267,21 +2212,762 @@ nav.scrolled .nav-logo-img { height: 48px; }
 .footer-logo-link:hover .footer-logo-img {
   filter: brightness(1.1) drop-shadow(0 0 10px rgba(0,212,255,0.35));
 }
-
+ 
 /* Reduced motion */
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after { animation-duration: 0.01ms !important; transition-duration: 0.2s !important; }
   .cursor, .cursor-ring { display: none; }
   body { cursor: auto; }
 }
+ 
+/* ============================================
+   RESPONSIVE — COMPREHENSIVE MOBILE FIX
+   ============================================ */
+ 
+/* ── BASE MOBILE TYPOGRAPHY & SPACING ── */
+@media (max-width: 768px) {
+  :root {
+    --radius-xl: 28px;
+    --radius-lg: 20px;
+  }
+ 
+  .section {
+    padding: 64px 20px;
+  }
+ 
+  /* ── NAVIGATION ── */
+  nav {
+    padding: 0 16px;
+    height: 60px;
+  }
+  nav.scrolled {
+    height: 56px;
+  }
+  .nav-logo-img {
+    height: 40px;
+  }
+  .nav-links {
+    display: none;
+  }
+  .hamburger {
+    display: flex;
+  }
+  .nav-cta .btn-book {
+    display: none;
+  }
+  .btn-emergency {
+    font-size: 11px;
+    padding: 6px 12px;
+  }
+ 
+  /* ── HERO ── */
+  #hero {
+    min-height: 100svh;
+  }
+  .hero-container {
+    grid-template-columns: 1fr;
+    padding: 80px 20px 48px;
+    gap: 32px;
+  }
+  .hero-left {
+    gap: 20px;
+  }
+  .hero-badge span {
+    font-size: 10px;
+  }
+  .hero-headline {
+    font-size: clamp(34px, 9vw, 52px);
+    letter-spacing: -1px;
+    line-height: 1.05;
+  }
+  .hero-sub {
+    font-size: 15px;
+    line-height: 1.65;
+    max-width: 100%;
+  }
+  .hero-services {
+    gap: 6px;
+  }
+  .service-tag {
+    font-size: 11px;
+    padding: 5px 10px;
+  }
+  .hero-cta {
+    flex-direction: column;
+    width: 100%;
+    gap: 12px;
+  }
+  .btn-primary,
+  .btn-secondary {
+    width: 100%;
+    justify-content: center;
+    padding: 14px 20px;
+    font-size: 15px;
+  }
+  .btn-call {
+    justify-content: center;
+  }
+  .hero-stats {
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
+  .stat-num {
+    font-size: 24px;
+  }
+  .stat-label {
+    font-size: 11px;
+  }
+ 
+  /* Hero Right — show slim banner on mobile */
+  .hero-right {
+    display: block !important;
+    height: 260px;
+  }
+  .orbit-ring {
+    display: none;
+  }
+  .hero-card-main,
+  .hero-banner-card {
+    width: 100%;
+    height: 260px;
+    border-radius: var(--radius-lg);
+    left: 0;
+    top: 0;
+    transform: none;
+    position: relative;
+  }
+  .hero-banner-img {
+    border-radius: var(--radius-lg);
+  }
+  /* Float cards hidden on mobile — too cluttered */
+  .float-card {
+    display: none;
+  }
+ 
+  /* ── MARQUEE ── */
+  .marquee-item {
+    padding: 0 24px;
+    font-size: 11px;
+  }
+ 
+  /* ── ABOUT ── */
+  .about-wrap {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+  .about-visual {
+    height: 280px;
+  }
+  .about-glass-card,
+  .about-img-card {
+    border-radius: var(--radius-lg);
+    position: relative;
+    width: 100%;
+  }
+  .about-icon-grid {
+    gap: 8px;
+    padding: 0 20px;
+  }
+  .about-icon-cell .icon {
+    font-size: 22px;
+  }
+  .about-icon-cell .label {
+    font-size: 9px;
+  }
+  .timeline-item {
+    padding-bottom: 20px;
+    gap: 14px;
+  }
+  .timeline-dot {
+    width: 28px;
+    height: 28px;
+    font-size: 11px;
+    flex-shrink: 0;
+  }
+  .timeline-desc {
+    font-size: 13px;
+  }
+ 
+  /* ── STATS ── */
+  .stats-section {
+    padding: 40px 20px;
+  }
+  .stats-inner {
+    grid-template-columns: 1fr 1fr;
+    border-radius: var(--radius-md);
+  }
+  .stat-card {
+    padding: 28px 20px;
+  }
+  .stat-card .num {
+    font-size: 36px;
+    letter-spacing: -1px;
+  }
+  .stat-card .unit {
+    font-size: 24px;
+  }
+  .stat-card .desc {
+    font-size: 12px;
+    line-height: 1.4;
+  }
+ 
+  /* ── INTERIOR ── */
+  .interior-section {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  .interior-card {
+    border-radius: 20px;
+    margin-top: 28px;
+  }
+  .interior-img {
+    height: 260px;
+  }
+  .interior-overlay {
+    padding: 20px;
+  }
+  .interior-overlay-text {
+    font-size: 15px;
+  }
+ 
+  /* ── PRODUCTS ── */
+  .products-section {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  .product-main-img {
+    height: 260px;
+  }
+  .product-img-frame {
+    border-radius: 20px;
+  }
+  .product-cta-row {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 12px;
+    margin-top: 20px;
+  }
+  .product-cta-row .btn-primary,
+  .product-cta-row .btn-secondary {
+    text-align: center;
+    justify-content: center;
+  }
+ 
+  /* ── SERVICES ── */
+  .services-header {
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 36px;
+    gap: 16px;
+  }
+  .services-grid {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+  .service-card {
+    padding: 24px 20px;
+    border-radius: var(--radius-lg);
+  }
+  .service-icon-wrap {
+    width: 52px;
+    height: 52px;
+    font-size: 24px;
+    margin-bottom: 16px;
+  }
+  .service-name {
+    font-size: 18px;
+  }
+  .service-desc {
+    font-size: 13px;
+    margin-bottom: 16px;
+  }
+  .service-features {
+    gap: 5px;
+    margin-bottom: 20px;
+  }
+  .service-feature {
+    font-size: 12px;
+  }
+ 
+  /* ── WHY US ── */
+  #why-wrap {
+    padding: 36px 20px;
+    border-radius: var(--radius-lg);
+  }
+  .why-grid {
+    grid-template-columns: 1fr;
+    gap: 28px;
+    margin-top: 36px;
+  }
+  .why-item {
+    gap: 14px;
+  }
+  .why-title {
+    font-size: 16px;
+    margin-bottom: 6px;
+  }
+  .why-desc {
+    font-size: 13px;
+  }
+ 
+  /* ── PROCESS — horizontal → vertical with left-aligned steps ── */
+  .process-track {
+    flex-direction: column;
+    gap: 24px;
+    margin-top: 40px;
+    padding-left: 0;
+  }
+  .process-track::before {
+    display: none;
+  }
+  .process-step {
+    flex-direction: row;
+    text-align: left;
+    align-items: flex-start;
+    gap: 16px;
+    padding: 0;
+    flex: none;
+  }
+  .process-dot {
+    width: 52px;
+    height: 52px;
+    font-size: 20px;
+    flex-shrink: 0;
+  }
+  .process-title {
+    font-size: 14px;
+    margin-bottom: 4px;
+  }
+  .process-desc {
+    font-size: 12px;
+  }
+ 
+  /* ── OWNER ── */
+  .owner-card {
+    grid-template-columns: 1fr;
+    gap: 28px;
+    padding: 28px 20px;
+    margin-top: 32px;
+    border-radius: var(--radius-lg);
+  }
+  .owner-left {
+    justify-content: center;
+  }
+  .owner-img-frame {
+    width: 200px;
+    height: 240px;
+    border-radius: 20px;
+  }
+  .owner-img-badge {
+    font-size: 10px;
+    padding: 5px 12px;
+  }
+  .owner-right {
+    gap: 16px;
+  }
+  .owner-name {
+    font-size: clamp(28px, 8vw, 40px);
+    letter-spacing: -1px;
+  }
+  .owner-bio {
+    font-size: 14px;
+    max-width: 100%;
+  }
+  .owner-checks {
+    gap: 8px;
+  }
+  .owner-check {
+    font-size: 12px;
+    padding: 6px 12px;
+  }
+  .owner-actions {
+    flex-direction: column;
+    gap: 10px;
+  }
+  .owner-actions .btn-primary,
+  .owner-actions .btn-secondary {
+    width: 100%;
+    justify-content: center;
+  }
+ 
+  /* ── TESTIMONIALS ── */
+  .testimonials-grid {
+    grid-template-columns: 1fr;
+    gap: 16px;
+    margin-top: 36px;
+  }
+  .testimonial-card {
+    padding: 24px 20px;
+    border-radius: var(--radius-lg);
+  }
+  .testimonial-text {
+    font-size: 13px;
+    margin-bottom: 20px;
+  }
+ 
+  /* ── EMERGENCY BANNER ── */
+  .emergency-banner {
+    flex-direction: column;
+    margin: 0 20px;
+    padding: 28px 20px;
+    border-radius: var(--radius-lg);
+    gap: 24px;
+  }
+  .emergency-left {
+    gap: 16px;
+    align-items: flex-start;
+  }
+  .emergency-icon-wrap {
+    width: 52px;
+    height: 52px;
+    font-size: 22px;
+    border-radius: 14px;
+    flex-shrink: 0;
+  }
+  .emergency-title {
+    font-size: 18px;
+  }
+  .emergency-sub {
+    font-size: 13px;
+  }
+  .emergency-btns {
+    flex-direction: column;
+    width: 100%;
+    gap: 10px;
+  }
+  .btn-ember {
+    text-align: center;
+    padding: 13px 20px;
+    font-size: 14px;
+  }
+ 
+  /* ── BRANDS ── */
+  .brands-section {
+    padding: 48px 20px;
+  }
+  .brands-grid {
+    gap: 10px;
+  }
+  .brand-chip {
+    padding: 8px 16px;
+    font-size: 12px;
+  }
+ 
+  /* ── FAQ ── */
+  .faq-layout {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+  .faq-left {
+    position: static;
+  }
+  .faq-list {
+    margin-top: 0;
+  }
+  .faq-item {
+    border-radius: 14px;
+  }
+  .faq-q {
+    padding: 16px 18px;
+    font-size: 14px;
+  }
+  .faq-a-inner {
+    padding: 0 18px 16px;
+    font-size: 13px;
+  }
+ 
+  /* ── CONTACT ── */
+  .contact-wrap {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+  .contact-form-wrap {
+    padding: 24px 20px;
+    border-radius: var(--radius-lg);
+  }
+  .form-row {
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+  .form-input,
+  .form-select,
+  .form-textarea {
+    font-size: 16px; /* Prevents iOS auto-zoom */
+    padding: 12px 14px;
+  }
+  .form-submit {
+    padding: 14px;
+    font-size: 15px;
+    border-radius: 14px;
+  }
+  .contact-store-img-wrap {
+    border-radius: 16px;
+    margin-bottom: 28px;
+  }
+  .contact-store-img {
+    height: 180px;
+  }
+  .contact-store-overlay {
+    padding: 20px;
+  }
+  .contact-store-badge {
+    font-size: 12px;
+    padding: 8px 14px;
+  }
+  .contact-card {
+    padding: 18px 16px;
+    border-radius: 14px;
+  }
+  .contact-map {
+    height: 180px;
+    border-radius: 14px;
+  }
+ 
+  /* ── FOOTER ── */
+  footer {
+    padding: 52px 20px 32px;
+  }
+  .footer-top {
+    grid-template-columns: 1fr;
+    gap: 32px;
+    margin-bottom: 40px;
+  }
+  .footer-brand .nav-logo {
+    font-size: 22px;
+  }
+  .footer-logo-img {
+    height: 40px;
+  }
+  .footer-desc {
+    font-size: 13px;
+    max-width: 100%;
+  }
+  .footer-col h4 {
+    font-size: 12px;
+    margin-bottom: 14px;
+  }
+  .footer-links a {
+    font-size: 13px;
+  }
+  .footer-bottom {
+    flex-direction: column;
+    text-align: center;
+    gap: 12px;
+    padding-top: 24px;
+  }
+  .footer-copy {
+    font-size: 12px;
+  }
+  .footer-legal {
+    gap: 16px;
+  }
+  .footer-legal a {
+    font-size: 11px;
+  }
+ 
+  /* ── FLOATING ACTIONS ── */
+  .floating-actions {
+    bottom: 20px;
+    right: 14px;
+    gap: 10px;
+  }
+  .fab {
+    width: 48px;
+    height: 48px;
+    font-size: 20px;
+  }
+  .fab-label {
+    display: none; /* Too narrow on mobile */
+  }
+ 
+  /* ── SECTION TITLES ── */
+  .section-title {
+    font-size: clamp(28px, 7vw, 42px);
+    letter-spacing: -0.8px;
+  }
+  .section-eyebrow {
+    font-size: 10px;
+  }
+  .section-body {
+    font-size: 14px;
+    line-height: 1.7;
+    max-width: 100%;
+  }
+}
+ 
+/* ── EXTRA SMALL (400px and below) ── */
+@media (max-width: 400px) {
+  .hero-headline {
+    font-size: clamp(30px, 10vw, 38px);
+    letter-spacing: -0.5px;
+  }
+  .hero-services {
+    gap: 5px;
+  }
+  .service-tag {
+    font-size: 10px;
+    padding: 4px 9px;
+  }
+  .stats-inner {
+    grid-template-columns: 1fr 1fr;
+  }
+  .stat-card {
+    padding: 20px 14px;
+  }
+  .stat-card .num {
+    font-size: 30px;
+  }
+  .owner-img-frame {
+    width: 170px;
+    height: 210px;
+  }
+  .about-visual {
+    height: 240px;
+  }
+  .interior-img,
+  .product-main-img {
+    height: 220px;
+  }
+  nav {
+    padding: 0 12px;
+  }
+  .btn-emergency {
+    display: none; /* Too cramped at tiny widths */
+  }
+  .hero-right {
+    height: 220px;
+  }
+  .hero-card-main,
+  .hero-banner-card {
+    height: 220px;
+  }
+}
+ 
+/* ── TABLET (769px – 1024px) ── */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .section {
+    padding: 80px 32px;
+  }
+  nav {
+    padding: 0 28px;
+  }
+  .nav-links {
+    display: none;
+  }
+  .hamburger {
+    display: flex;
+  }
+  .hero-container {
+    grid-template-columns: 1fr;
+    padding: 120px 32px 60px;
+    gap: 48px;
+  }
+  .hero-right {
+    display: block !important;
+    height: 380px;
+  }
+  .hero-banner-card {
+    width: 320px;
+    height: 380px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+  }
+  .float-card {
+    display: flex;
+  }
+  .about-wrap {
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+  }
+  .about-visual {
+    height: 400px;
+  }
+  .services-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .owner-card {
+    grid-template-columns: 260px 1fr;
+    gap: 40px;
+    padding: 40px 36px;
+  }
+  .owner-img-frame {
+    width: 220px;
+    height: 260px;
+  }
+  .stats-inner {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .stat-card {
+    padding: 36px 28px;
+  }
+  .testimonials-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+  .testimonials-grid .testimonial-card:last-child {
+    grid-column: 1 / -1;
+    max-width: 50%;
+    margin: 0 auto;
+  }
+  .why-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+  .footer-top {
+    grid-template-columns: 1fr 1fr;
+    gap: 32px;
+  }
+  .faq-layout {
+    grid-template-columns: 1fr 1.8fr;
+    gap: 48px;
+  }
+  #why-wrap {
+    padding: 52px 40px;
+  }
+  .interior-img {
+    height: 380px;
+  }
+  .product-main-img {
+    height: 360px;
+  }
+  .contact-wrap {
+    grid-template-columns: 1fr 1fr;
+  }
+  .emergency-banner {
+    margin: 0 32px;
+    padding: 36px 40px;
+  }
+}
+ 
+/* ── SAFE AREA INSETS (iPhone notch / home indicator) ── */
+@supports (padding-bottom: env(safe-area-inset-bottom)) {
+  .floating-actions {
+    bottom: calc(20px + env(safe-area-inset-bottom));
+  }
+  footer {
+    padding-bottom: calc(32px + env(safe-area-inset-bottom));
+  }
+}
+ 
+/* ── PREVENT iOS INPUT ZOOM ── */
+@media (max-width: 768px) {
+  input[type="text"],
+  input[type="tel"],
+  input[type="email"],
+  select,
+  textarea {
+    font-size: 16px !important;
+  }
+}
 </style>
 </head>
 <body>
-
+ 
 <!-- Custom Cursor -->
 <div class="cursor" id="cursor"></div>
 <div class="cursor-ring" id="cursorRing"></div>
-
+ 
 <!-- Loading Screen -->
 <div id="loader">
   <img src="logoimg.png"
@@ -2296,10 +2982,10 @@ nav.scrolled .nav-logo-img { height: 48px; }
   </div>
   <div class="loader-text" id="loaderText">Initializing…</div>
 </div>
-
+ 
 <!-- Progress Bar -->
 <div id="progress-bar"></div>
-
+ 
 <!-- Navigation -->
 <nav id="navbar">
   <a href="/" class="nav-logo" aria-label="SusiElectronics Home">
@@ -2327,7 +3013,7 @@ nav.scrolled .nav-logo-img { height: 48px; }
     </div>
   </div>
 </nav>
-
+ 
 <!-- Mobile Nav -->
 <div class="overlay" id="overlay"></div>
 <div class="mobile-nav" id="mobileNav">
@@ -2341,7 +3027,7 @@ nav.scrolled .nav-logo-img { height: 48px; }
     <li><a href="#contact">Contact</a></li>
   </ul>
 </div>
-
+ 
 <!-- ============================================
      HERO
      ============================================ -->
@@ -2351,7 +3037,7 @@ nav.scrolled .nav-logo-img { height: 48px; }
   </div>
   <div class="grid-overlay"></div>
   <div class="noise-overlay"></div>
-
+ 
   <div class="hero-container">
     <!-- Left -->
     <div class="hero-left">
@@ -2359,17 +3045,20 @@ nav.scrolled .nav-logo-img { height: 48px; }
         <span class="hero-badge-dot"></span>
         <span>Serving Salem since 2010 · 24/7 Emergency</span>
       </div>
-
+ 
       <h1 class="hero-headline">
+         <span class="line-3">SUSI</span>
+        <span class="line-2">ELECTRONICS</span>
+        <br>
         <span class="line-1">Your Home.</span>
         <span class="line-2">Always Running.</span>
         <span class="line-3">Always Cool.</span>
       </h1>
-
+ 
       <p class="hero-sub">
         Salem's most trusted appliance service center. From AC installation to refrigerator repair, we keep every appliance in your home performing at its best — with genuine parts and expert care.
       </p>
-
+ 
       <div class="hero-services">
         <span class="service-tag">❄️ Air Conditioners</span>
         <span class="service-tag">🧊 Refrigerators</span>
@@ -2379,7 +3068,7 @@ nav.scrolled .nav-logo-img { height: 48px; }
         <span class="service-tag">🌬️ Air Coolers</span>
         <span class="service-tag">🍳 Microwave Ovens</span>
       </div>
-
+ 
       <div class="hero-cta">
         <a href="#contact" class="btn-primary">
           <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M8 1v7M8 1l-3 3M8 1l3 3" stroke="white" stroke-width="1.5" stroke-linecap="round"/><rect x="2" y="10" width="12" height="4" rx="1" fill="white" opacity="0.4"/></svg>
@@ -2393,7 +3082,7 @@ nav.scrolled .nav-logo-img { height: 48px; }
           </div>
         </a>
       </div>
-
+ 
       <div class="hero-stats">
         <div class="stat-item">
           <div class="stat-num" data-count="15">0</div>
@@ -2409,12 +3098,12 @@ nav.scrolled .nav-logo-img { height: 48px; }
         </div>
       </div>
     </div>
-
+ 
     <!-- Right — Hero Banner Image -->
     <div class="hero-right" id="heroVisual">
       <div class="orbit-ring orbit-1"><div class="orbit-dot"></div></div>
       <div class="orbit-ring orbit-2"></div>
-
+ 
       <!-- Hero Banner Image Card -->
       <div class="hero-card-main hero-banner-card" id="heroCard">
         <img src="bannering.png"
@@ -2430,7 +3119,7 @@ nav.scrolled .nav-logo-img { height: 48px; }
           </div>
         </div>
       </div>
-
+ 
       <!-- Float card 1 — Available 24/7 -->
       <div class="float-card fc-1">
         <div class="fc-icon ember">🚨</div>
@@ -2439,7 +3128,7 @@ nav.scrolled .nav-logo-img { height: 48px; }
           <div class="fc-sub">Always available</div>
         </div>
       </div>
-
+ 
       <!-- Float card 2 — Certified -->
       <div class="float-card fc-2">
         <div class="fc-icon cyan">✅</div>
@@ -2448,7 +3137,7 @@ nav.scrolled .nav-logo-img { height: 48px; }
           <div class="fc-sub">15+ years trained</div>
         </div>
       </div>
-
+ 
       <!-- Float card 3 — Warranty -->
       <div class="float-card fc-3">
         <div class="fc-icon violet">🛡️</div>
@@ -2460,7 +3149,7 @@ nav.scrolled .nav-logo-img { height: 48px; }
     </div>
   </div>
 </section>
-
+ 
 <!-- Marquee -->
 <div class="marquee-section">
   <div class="marquee-track" id="marqueeTrack">
@@ -2487,7 +3176,7 @@ nav.scrolled .nav-logo-img { height: 48px; }
     <div class="marquee-item"><span class="dot">·</span> Est. 2010 · Salem TN</div>
   </div>
 </div>
-
+ 
 <!-- ============================================
      ABOUT
      ============================================ -->
@@ -2550,7 +3239,7 @@ nav.scrolled .nav-logo-img { height: 48px; }
     </div>
   </div>
 </section>
-
+ 
 <!-- STATS -->
 <div class="stats-section">
   <div class="stats-bg"></div>
@@ -2573,7 +3262,7 @@ nav.scrolled .nav-logo-img { height: 48px; }
     </div>
   </div>
 </div>
-
+ 
 <!-- ============================================
      INTERIOR SHOWCASE
      ============================================ -->
@@ -2601,7 +3290,7 @@ nav.scrolled .nav-logo-img { height: 48px; }
     </div>
   </div>
 </section>
-
+ 
 <!-- ============================================
      PRODUCTS SHOWCASE
      ============================================ -->
@@ -2633,7 +3322,7 @@ nav.scrolled .nav-logo-img { height: 48px; }
     </div>
   </div>
 </section>
-
+ 
 <!-- ============================================
      SERVICES
      ============================================ -->
@@ -2646,7 +3335,7 @@ nav.scrolled .nav-logo-img { height: 48px; }
       </div>
       <p class="section-body reveal reveal-delay-2" style="max-width:360px;">From routine maintenance to emergency breakdowns — we handle it all with certified expertise and genuine parts.</p>
     </div>
-
+ 
     <div class="services-grid">
       <!-- AC -->
       <div class="service-card reveal">
@@ -2661,10 +3350,10 @@ nav.scrolled .nav-logo-img { height: 48px; }
         </div>
         <div class="service-footer">
           <span class="service-time">⏱ Same-day service available</span>
-          <a class="service-btn" href="#contact">Book Now →</a>
+          <a class="service-btn" href="#contact">❄️</a>
         </div>
       </div>
-
+ 
       <!-- Refrigerator -->
       <div class="service-card reveal reveal-delay-1">
         <div class="service-icon-wrap">🧊</div>
@@ -2678,10 +3367,10 @@ nav.scrolled .nav-logo-img { height: 48px; }
         </div>
         <div class="service-footer">
           <span class="service-time">⏱ 2–4 hours turnaround</span>
-          <a class="service-btn" href="#contact">Book Now →</a>
+          <a class="service-btn" href="#contact">🧊→</a>
         </div>
       </div>
-
+ 
       <!-- Washing Machine -->
       <div class="service-card reveal reveal-delay-2">
         <div class="service-icon-wrap">🫧</div>
@@ -2695,10 +3384,10 @@ nav.scrolled .nav-logo-img { height: 48px; }
         </div>
         <div class="service-footer">
           <span class="service-time">⏱ Same-day repair</span>
-          <a class="service-btn" href="#contact">Book Now →</a>
+          <a class="service-btn" href="#contact">🫧</a>
         </div>
       </div>
-
+ 
       <!-- LED TV -->
       <div class="service-card reveal reveal-delay-3">
         <div class="service-icon-wrap">📺</div>
@@ -2712,10 +3401,10 @@ nav.scrolled .nav-logo-img { height: 48px; }
         </div>
         <div class="service-footer">
           <span class="service-time">⏱ 1–3 hours repair time</span>
-          <a class="service-btn" href="#contact">Book Now →</a>
+          <a class="service-btn" href="#contact">📺</a>
         </div>
       </div>
-
+ 
       <!-- RO -->
       <div class="service-card reveal reveal-delay-1">
         <div class="service-icon-wrap">💧</div>
@@ -2729,10 +3418,10 @@ nav.scrolled .nav-logo-img { height: 48px; }
         </div>
         <div class="service-footer">
           <span class="service-time">⏱ 45-min service call</span>
-          <a class="service-btn" href="#contact">Book Now →</a>
+          <a class="service-btn" href="#contact">💧→</a>
         </div>
       </div>
-
+ 
       <!-- Emergency -->
       <div class="service-card emergency reveal reveal-delay-2">
         <div class="service-icon-wrap">🚨</div>
@@ -2746,13 +3435,13 @@ nav.scrolled .nav-logo-img { height: 48px; }
         </div>
         <div class="service-footer">
           <span class="service-time" style="color:var(--accent-ember)">🔴 Available right now</span>
-          <a class="service-btn" href="tel:+919597478152" style="background:rgba(255,107,53,0.1);border-color:rgba(255,107,53,0.3);color:var(--accent-ember)">Call Now →</a>
+          <a class="service-btn" href="tel:+919597478152" style="background:rgba(255,107,53,0.1);border-color:rgba(255,107,53,0.3);color:var(--accent-ember)">🚨</a>
         </div>
       </div>
     </div>
   </div>
 </section>
-
+ 
 <!-- ============================================
      WHY CHOOSE US
      ============================================ -->
@@ -2810,7 +3499,7 @@ nav.scrolled .nav-logo-img { height: 48px; }
     </div>
   </div>
 </section>
-
+ 
 <!-- ============================================
      SERVICE PROCESS
      ============================================ -->
@@ -2864,7 +3553,7 @@ nav.scrolled .nav-logo-img { height: 48px; }
     </div>
   </div>
 </section>
-
+ 
 <!-- ============================================
      OWNER SECTION
      ============================================ -->
@@ -2927,7 +3616,7 @@ nav.scrolled .nav-logo-img { height: 48px; }
     </div>
   </div>
 </section>
-
+ 
 <!-- ============================================
      TESTIMONIALS
      ============================================ -->
@@ -2992,7 +3681,7 @@ nav.scrolled .nav-logo-img { height: 48px; }
     </div>
   </div>
 </section>
-
+ 
 <!-- ============================================
      EMERGENCY BANNER
      ============================================ -->
@@ -3009,7 +3698,7 @@ nav.scrolled .nav-logo-img { height: 48px; }
     <a href="https://wa.me/919597478152" class="btn-secondary" style="white-space:nowrap">💬 WhatsApp</a>
   </div>
 </div>
-
+ 
 <!-- ============================================
      BRANDS
      ============================================ -->
@@ -3038,7 +3727,7 @@ nav.scrolled .nav-logo-img { height: 48px; }
     </div>
   </div>
 </div>
-
+ 
 <!-- ============================================
      FAQ
      ============================================ -->
@@ -3087,7 +3776,7 @@ nav.scrolled .nav-logo-img { height: 48px; }
     </div>
   </div>
 </section>
-
+ 
 <!-- ============================================
      CONTACT
      ============================================ -->
@@ -3150,7 +3839,7 @@ nav.scrolled .nav-logo-img { height: 48px; }
         <button class="form-submit" onclick="handleSubmit()">Book Service Call →</button>
         <p style="font-size:12px;color:var(--text-dim);text-align:center;margin-top:12px;">We'll confirm your booking within 30 minutes via call or WhatsApp.</p>
       </div>
-
+ 
       <div class="contact-info">
         <div class="reveal">
           <h3 style="font-family:var(--font-display);font-size:20px;font-weight:700;color:var(--text-ice);margin-bottom:24px;letter-spacing:-0.3px;">Reach Us Directly</h3>
@@ -3201,7 +3890,7 @@ nav.scrolled .nav-logo-img { height: 48px; }
     </div>
   </div>
 </section>
-
+ 
 <!-- ============================================
      FOOTER
      ============================================ -->
@@ -3269,7 +3958,7 @@ nav.scrolled .nav-logo-img { height: 48px; }
     </div>
   </div>
 </footer>
-
+ 
 <!-- Floating Actions -->
 <div class="floating-actions">
   <button class="fab fab-top" id="fabTop" onclick="window.scrollTo({top:0,behavior:'smooth'})" title="Back to top" aria-label="Back to top">↑</button>
@@ -3282,7 +3971,7 @@ nav.scrolled .nav-logo-img { height: 48px; }
     <span class="fab-label">Chat on WhatsApp</span>
   </a>
 </div>
-
+ 
 <!-- ============================================
      SCRIPTS
      ============================================ -->
@@ -3294,7 +3983,7 @@ const loaderText = document.getElementById('loaderText');
 const messages = ['Loading services…', 'Preparing experience…', 'Almost ready…'];
 let progress = 0;
 let msgIdx = 0;
-
+ 
 const loadInterval = setInterval(() => {
   progress += Math.random() * 15 + 5;
   if (progress > 100) progress = 100;
@@ -3307,13 +3996,13 @@ const loadInterval = setInterval(() => {
     setTimeout(() => loader.classList.add('hidden'), 400);
   }
 }, 80);
-
+ 
 // ─── CURSOR ────────────────────────────────────
 const cursor = document.getElementById('cursor');
 const cursorRing = document.getElementById('cursorRing');
 let cursorX = 0, cursorY = 0, ringX = 0, ringY = 0;
 const isMobile = window.matchMedia('(pointer: coarse)').matches;
-
+ 
 if (!isMobile) {
   document.addEventListener('mousemove', (e) => {
     cursorX = e.clientX;
@@ -3321,7 +4010,7 @@ if (!isMobile) {
     cursor.style.left = cursorX + 'px';
     cursor.style.top = cursorY + 'px';
   });
-
+ 
   function animateRing() {
     ringX += (cursorX - ringX) * 0.12;
     ringY += (cursorY - ringY) * 0.12;
@@ -3330,7 +4019,7 @@ if (!isMobile) {
     requestAnimationFrame(animateRing);
   }
   animateRing();
-
+ 
   document.querySelectorAll('a, button, .service-card, .faq-q, .about-icon-cell').forEach(el => {
     el.addEventListener('mouseenter', () => {
       cursor.classList.add('hover');
@@ -3341,42 +4030,47 @@ if (!isMobile) {
       cursorRing.classList.remove('hover');
     });
   });
+} else {
+  // Hide cursor elements entirely on touch devices
+  cursor.style.display = 'none';
+  cursorRing.style.display = 'none';
+  document.body.style.cursor = 'auto';
 }
-
+ 
 // ─── NAV SCROLL ────────────────────────────────
 const navbar = document.getElementById('navbar');
 const progressBar = document.getElementById('progress-bar');
 const fabTop = document.getElementById('fabTop');
-
+ 
 window.addEventListener('scroll', () => {
   const scrolled = window.scrollY;
   const maxScroll = document.body.scrollHeight - window.innerHeight;
   const pct = (scrolled / maxScroll) * 100;
-
+ 
   progressBar.style.width = pct + '%';
   navbar.classList.toggle('scrolled', scrolled > 50);
   fabTop.classList.toggle('visible', scrolled > 400);
 }, { passive: true });
-
+ 
 // ─── MOBILE NAV ────────────────────────────────
 const hamburgerBtn = document.getElementById('hamburgerBtn');
 const mobileNav = document.getElementById('mobileNav');
 const mobileClose = document.getElementById('mobileClose');
 const overlay = document.getElementById('overlay');
-
+ 
 function openMenu() { mobileNav.classList.add('open'); overlay.classList.add('open'); document.body.style.overflow = 'hidden'; }
 function closeMenu() { mobileNav.classList.remove('open'); overlay.classList.remove('open'); document.body.style.overflow = ''; }
-
+ 
 hamburgerBtn.addEventListener('click', openMenu);
 hamburgerBtn.addEventListener('keydown', e => e.key === 'Enter' && openMenu());
 mobileClose.addEventListener('click', closeMenu);
 overlay.addEventListener('click', closeMenu);
 document.querySelectorAll('.mobile-nav a').forEach(a => a.addEventListener('click', closeMenu));
-
-// ─── HERO PARALLAX ─────────────────────────────
+ 
+// ─── HERO PARALLAX (desktop only) ──────────────
 const heroCard = document.getElementById('heroCard');
 const heroVisual = document.getElementById('heroVisual');
-
+ 
 if (!isMobile && heroCard) {
   document.addEventListener('mousemove', (e) => {
     const cx = window.innerWidth / 2;
@@ -3389,7 +4083,7 @@ if (!isMobile && heroCard) {
     heroCard.style.transform = 'translate(-50%, -50%)';
   });
 }
-
+ 
 // ─── SCROLL REVEAL ─────────────────────────────
 const revealEls = document.querySelectorAll('.reveal');
 const revealObserver = new IntersectionObserver((entries) => {
@@ -3400,14 +4094,14 @@ const revealObserver = new IntersectionObserver((entries) => {
     }
   });
 }, { threshold: 0.1, rootMargin: '0px 0px -60px 0px' });
-
+ 
 revealEls.forEach(el => revealObserver.observe(el));
-
+ 
 // ─── COUNTER ANIMATION ─────────────────────────
 function animateCounter(el, target, duration = 1500) {
   const start = performance.now();
   const isDecimal = String(target).includes('.');
-
+ 
   function update(now) {
     const elapsed = now - start;
     const progress = Math.min(elapsed / duration, 1);
@@ -3419,7 +4113,7 @@ function animateCounter(el, target, duration = 1500) {
   }
   requestAnimationFrame(update);
 }
-
+ 
 const counterObserver = new IntersectionObserver((entries) => {
   entries.forEach(entry => {
     if (entry.isIntersecting) {
@@ -3430,9 +4124,9 @@ const counterObserver = new IntersectionObserver((entries) => {
     }
   });
 }, { threshold: 0.5 });
-
+ 
 document.querySelectorAll('[data-count]').forEach(el => counterObserver.observe(el));
-
+ 
 // ─── FAQ ───────────────────────────────────────
 document.querySelectorAll('.faq-item').forEach(item => {
   item.querySelector('.faq-q').addEventListener('click', () => {
@@ -3441,24 +4135,24 @@ document.querySelectorAll('.faq-item').forEach(item => {
     if (!isOpen) item.classList.add('open');
   });
 });
-
+ 
 // ─── FORM SUBMIT ───────────────────────────────
 function handleSubmit() {
   const name = document.getElementById('formName').value.trim();
   const phone = document.getElementById('formPhone').value.trim();
   const appliance = document.getElementById('formAppliance').value;
   const issue = document.getElementById('formIssue').value.trim();
-
+ 
   if (!name || !phone || !appliance) {
     showToast('Please fill in your name, phone, and appliance type.', 'error');
     return;
   }
-
+ 
   const msg = encodeURIComponent(`Hi SusiElectronics! I'd like to book a service.\n\nName: ${name}\nPhone: ${phone}\nAppliance: ${appliance}\nIssue: ${issue || 'Not specified'}`);
   window.open(`https://wa.me/919597478152?text=${msg}`, '_blank');
   showToast('Opening WhatsApp to confirm your booking!', 'success');
 }
-
+ 
 function showToast(msg, type) {
   const toast = document.createElement('div');
   toast.style.cssText = `
@@ -3471,12 +4165,14 @@ function showToast(msg, type) {
     z-index:9999; backdrop-filter:blur(16px);
     animation: toastIn 0.3s ease;
     white-space:nowrap;
+    max-width: 90vw;
+    text-align: center;
   `;
   toast.textContent = msg;
   document.body.appendChild(toast);
   setTimeout(() => toast.remove(), 3500);
 }
-
+ 
 // ─── SMOOTH SCROLL ─────────────────────────────
 document.querySelectorAll('a[href^="#"]').forEach(a => {
   a.addEventListener('click', e => {
@@ -3487,7 +4183,7 @@ document.querySelectorAll('a[href^="#"]').forEach(a => {
     }
   });
 });
-
+ 
 // ─── MARQUEE PAUSE ON HOVER ────────────────────
 const marqueeTrack = document.getElementById('marqueeTrack');
 if (marqueeTrack) {
@@ -3497,3 +4193,4 @@ if (marqueeTrack) {
 </script>
 </body>
 </html>
+ 
