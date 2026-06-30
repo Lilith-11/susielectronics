@@ -421,17 +421,17 @@ nav.scrolled {
 }
  
 .hero-container {
-  position: relative;
-  z-index: 2;
-  width: 100%;
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 120px 40px 80px;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 60px;
-  align-items: center;
-}
+            position: relative;
+            z-index: 2;
+            width: 100%;
+            max-width: 1280px;
+            margin: 0 auto;
+            padding: 120px 40px 80px;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 60px;
+            align-items: center;
+        }
  
 .hero-left { display: flex; flex-direction: column; gap: 28px; }
  
@@ -467,22 +467,25 @@ nav.scrolled {
  
 .hero-headline {
   font-family: var(--font-display);
-  font-size: clamp(42px, 6vw, 80px);
+  font-size: clamp(36px, 5.5vw, 80px);
   font-weight: 800;
-  line-height: 1.0;
+  line-height: 1.08;
   letter-spacing: -2px;
   animation: fadeInUp 0.8s 0.1s ease both;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
 }
-.hero-headline .line-1 { color: var(--text-ice); display: block; }
-.hero-headline .line-2 {
-  display: block;
+.brand-line { display: flex; flex-wrap: wrap; gap: 0; }
+.hero-headline .line-1 { color: var(--text-ice); }
+.hero-headline .line-2,
+.hero-headline .line-3 {
   background: linear-gradient(135deg, var(--accent-cyan) 0%, var(--accent-violet) 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
 }
-.hero-headline .line-3 { color: var(--text-ice); display: block; }
- 
+.hero-headline .line-3 { margin-right: 0.3ch; }
 .hero-sub {
   font-size: 16px;
   line-height: 1.7;
@@ -2264,27 +2267,35 @@ nav.scrolled .nav-logo-img { height: 48px; }
   #hero {
     min-height: 100svh;
   }
-  .hero-container {
+.hero-container {
+    width: 100%;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 80px 16px 40px;
+    display: grid;
     grid-template-columns: 1fr;
-    padding: 80px 20px 48px;
-    gap: 32px;
-  }
+    gap: 24px;
+    align-items: center;
+    justify-items: center;
+    text-align: center;
+}
   .hero-left {
     gap: 20px;
   }
   .hero-badge span {
     font-size: 10px;
   }
-  .hero-headline {
-    font-size: clamp(34px, 9vw, 52px);
-    letter-spacing: -1px;
-    line-height: 1.05;
-  }
-  .hero-sub {
-    font-size: 15px;
-    line-height: 1.65;
-    max-width: 100%;
-  }
+.hero-headline {
+  font-size: clamp(26px, 7.5vw, 36px);
+  letter-spacing: -0.5px;
+  line-height: 1.2;
+  gap: 6px;
+}
+.hero-sub {
+  font-size: 14px;
+  line-height: 1.6;
+  max-width: 100%;
+}
   .hero-services {
     gap: 6px;
   }
@@ -2798,10 +2809,10 @@ nav.scrolled .nav-logo-img { height: 48px; }
  
 /* ── EXTRA SMALL (400px and below) ── */
 @media (max-width: 400px) {
-  .hero-headline {
-    font-size: clamp(30px, 10vw, 38px);
-    letter-spacing: -0.5px;
-  }
+.hero-headline {
+  font-size: clamp(22px, 8vw, 28px);
+  letter-spacing: -0.3px;
+}
   .hero-services {
     gap: 5px;
   }
@@ -2823,7 +2834,7 @@ nav.scrolled .nav-logo-img { height: 48px; }
     height: 210px;
   }
   .about-visual {
-    height: 240px;
+    height: 24px;
   }
   .interior-img,
   .product-main-img {
@@ -2858,11 +2869,16 @@ nav.scrolled .nav-logo-img { height: 48px; }
   .hamburger {
     display: flex;
   }
-  .hero-container {
+ .hero-container {
     grid-template-columns: 1fr;
-    padding: 120px 32px 60px;
-    gap: 48px;
-  }
+    width: 100%;
+    max-width: 100%;
+    padding: 90px 20px 50px;
+    gap: 30px;
+    align-items: center;
+    justify-items: center;
+    text-align: center;
+}
   .hero-right {
     display: block !important;
     height: 380px;
@@ -3046,18 +3062,16 @@ nav.scrolled .nav-logo-img { height: 48px; }
         <span>Serving Salem since 2010 · 24/7 Emergency</span>
       </div>
  
-      <h1 class="hero-headline">
-         <span class="line-3">SUSI</span>
-        <span class="line-2">ELECTRONICS</span>
-        <br>
-        <span class="line-1">Your Home.</span>
-        <span class="line-2">Always Running.</span>
-        <span class="line-3">Always Cool.</span>
-      </h1>
- 
-      <p class="hero-sub">
-        Salem's most trusted appliance service center. From AC installation to refrigerator repair, we keep every appliance in your home performing at its best — with genuine parts and expert care.
-      </p>
+  <h1 class="hero-headline">
+  <span class="brand-line">
+    <span class="line-3">SUSI</span><span class="line-2">ELECTRONICS</span>
+  </span>
+  <span class="line-1">Your Home, Always Running.</span>
+</h1>
+
+<p class="hero-sub">
+  Salem's most trusted appliance service center. From AC installation to refrigerator repair, we keep every appliance in your home performing at its best — with genuine parts and expert care.
+</p>
  
       <div class="hero-services">
         <span class="service-tag">❄️ Air Conditioners</span>
